@@ -8,7 +8,10 @@ Esse código corresponde ao mesmo código programado em FORTRAN pela ISO 12213-2
 
 OBTENDO O FATOR Z
 
-Esse código foi programado utilizando o CODESYS e é PARTE de um projeto desenvolvido na UFMG em 2018/2019 para medição de vazão de gás natural utilizando plataformas abertas de automação (veja a publicação em anexo).
+Esse código foi programado utilizando o CODESYS e é PARTE de um projeto desenvolvido na UFMG em 2018/2019 por mim e pelo professor Carlos Henrique de Morais Bomfim para medição de vazão de gás natural utilizando plataformas abertas de automação (veja a publicação em anexo).
+
+Para utilização do programa no CODESYS utilize o arquivo AGA8-92DC_ST_IEC61131-3.project.
+Para visualição dos códigos no VisualCode utilize os arquivos contidos na pasta CÓDIGOS_AVULSOS e a extensão Structured Text Language Support para melhor visualização dos arquivos .st (extensão recomendada).
 
 Para obter o Fator Z, altere os seguintes parâmetro em AGA8_92DC_TESTE: Gas_Teste, T_Teste e P_Teste.
 O resultado estará gravado na variável Z_Gas.
@@ -61,8 +64,8 @@ Gas 5:
 Gas 6:
 (0.8260, 0.1170, 0.0110, 0.0350, 0.0075, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0012, 0.0012, 0.0004, 0.0004, 0.0002, 0.0001, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000)
 
-As condições de pressão e temperatura estão descritas no mesmo anexo da norma, disponível neste diretório.
-No diretório estão também os resultados encontrados por mim para esses exemplos.
+As condições de pressão e temperatura estão descritas no mesmo anexo da norma, disponível neste diretório (Annex C - ISO 12213-2).
+No diretório estão também os resultados encontrados por mim para esses exemplos (My Results (Z-Values)).
 
-Para dúvidas e contribuições utilize a Issue do diretório.
+Para dúvidas e contribuições utilize a issue do diretório.
 Respondo assim que possível. Obrigado pela visita!
