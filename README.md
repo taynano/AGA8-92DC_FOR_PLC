@@ -4,41 +4,42 @@ Código usualmente utilizado na medição de vazão de gás natural em conversor
 
 IMPORTANTE
 
-Esse código corresponde ao mesmo código programado em FORTRAN pela ISO 12213-2 onde foram preservados os nomes das variáveis e estruturas de dados. Para maiores informações consulte a norma e o codígo-fonte disponível nela.
+Esse código corresponde ao mesmo código programado em FORTRAN pela ISO 12213-2. Aqui foram preservados os nomes das variáveis e estruturas de dados. Para maiores informações consulte a norma e o código-fonte disponível nela.
 
 OBTENDO O FATOR Z
 
 Esse código foi programado utilizando o CODESYS e é PARTE de um projeto desenvolvido na UFMG em 2018/2019 para medição de vazão de gás natural utilizando plataformas abertas de automação (veja a publicação em anexo).
 
-Para obter o Fator Z, altere os seguintes parâmetro em AGA8_92DC_TESTE: Gas_Teste, T_Teste e P_Teste. O resultado estará gravado na variável Z_Gas.
+Para obter o Fator Z, altere os seguintes parâmetro em AGA8_92DC_TESTE: Gas_Teste, T_Teste e P_Teste.
+O resultado estará gravado na variável Z_Gas.
 
-Se utilizar o CODESYS para execução do código, alternativamente, você pode criar uma aplicação gráfica utilizando o WebVisu.
+Se utilizar o CODESYS para execução do programa, alternativamente, você pode criar uma aplicação gráfica utilizando o WebVisu.
 
 A unidade da variável T_Teste é ºC, enquanto a unidade de P_Teste é bar.
 
 A estrutura Gas_Teste possui a seguinte correspondência:
 
-Gas_Teste[00]  - CH4 (Metano)
-Gas_Teste[01]  - N2 (Nitrogênio)
-Gas_Teste[02]  - CO2 (Dióxido de Carbono)
-Gas_Teste[03]  - C2H6 (Etano)
-Gas_Teste[04]  - C3H8 (Propano)
-Gas_Teste[05]  - H20 (Água)
-Gas_Teste[06]  - H2S (Sulfeto de Hidrogênio)
-Gas_Teste[07]  - H2 (Hidrogênio)
-Gas_Teste[08]  - CO (Monóxido de Carbono)
-Gas_Teste[09]  - 02 (Oxigênio)
-Gas_Teste[10]  - I-C4H10 (I-Butano)
-Gas_Teste[11]  - N-C4H10 (N-Butano)
-Gas_Teste[12]  - I-C5H12 (I-Pentano)
-Gas_Teste[13]  - I-C5H12 (N-Pentano)
-Gas_Teste[14]  - N-C6H14 (N-Hexano)
-Gas_Teste[15]  - N-C7H16 (N-Heptano)
-Gas_Teste[16]  - N-C8H18 (N-Octano)
-Gas_Teste[17]  - N-C9H20 (N-Nonano)
-Gas_Teste[18]  - N-C10H22 (N-Decano)
-Gas_Teste[19]  - He (Hélio)
-Gas_Teste[20]  - Ar (Argônio)
+Gas_Teste[00]  - CH4 (Metano)  - 
+Gas_Teste[01]  - N2 (Nitrogênio)  - 
+Gas_Teste[02]  - CO2 (Dióxido de Carbono)  - 
+Gas_Teste[03]  - C2H6 (Etano)  - 
+Gas_Teste[04]  - C3H8 (Propano)  - 
+Gas_Teste[05]  - H20 (Água)  - 
+Gas_Teste[06]  - H2S (Sulfeto de Hidrogênio)  - 
+Gas_Teste[07]  - H2 (Hidrogênio)  - 
+Gas_Teste[08]  - CO (Monóxido de Carbono)  - 
+Gas_Teste[09]  - 02 (Oxigênio)  - 
+Gas_Teste[10]  - I-C4H10 (I-Butano)  - 
+Gas_Teste[11]  - N-C4H10 (N-Butano)  - 
+Gas_Teste[12]  - I-C5H12 (I-Pentano)  - 
+Gas_Teste[13]  - I-C5H12 (N-Pentano)  - 
+Gas_Teste[14]  - N-C6H14 (N-Hexano)  - 
+Gas_Teste[15]  - N-C7H16 (N-Heptano)  - 
+Gas_Teste[16]  - N-C8H18 (N-Octano)  - 
+Gas_Teste[17]  - N-C9H20 (N-Nonano)  - 
+Gas_Teste[18]  - N-C10H22 (N-Decano)  - 
+Gas_Teste[19]  - He (Hélio)  - 
+Gas_Teste[20]  - Ar (Argônio)  - 
 
 As composições recomendadas para teste do algoritmo segundo a ISO 12213-2:2006(E), Anexo C (Example Calculations) são:
 
