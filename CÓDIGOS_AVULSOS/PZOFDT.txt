@@ -1,0 +1,46 @@
+FUNCTION PZOFDT : LREAL
+VAR_INPUT
+	ED		: DWORD;
+	ET		: DWORD;
+	EP		: DWORD;
+	EZ		: DWORD;
+	EBmix	: DWORD;
+END_VAR
+VAR
+	D		: POINTER TO LREAL	;
+	T		: POINTER TO LREAL	;
+	P		: POINTER TO LREAL	;
+	Z		: POINTER TO LREAL	;
+	Bmix		: POINTER TO LREAL	;
+	N		: INT			;
+  	DR		: LREAL			;
+END_VAR
+
+P		:= EP;
+T		:= ET;
+D		:= ED;
+Z		:= EZ;
+Bmix		:= EBmix;
+DR		:= D^*EXPT(COEF.K1,3);
+Bmix^		:= 0;
+
+FOR N:=0 TO 17 DO
+	Bmix^ := Bmix^ + COEF.BI[N]/EXPT(T^,CONSTANTS.U[N]);
+END_FOR
+
+Z^ := 1.0 + Bmix^ * D^;
+
+FOR N:=12 TO 17 DO
+	Z^ := Z^ - DR * COEF.CNS[N]/EXPT(T^,CONSTANTS.U[N]);
+END_FOR
+
+FOR N:=12 TO 57 DO
+	Z^	:= Z^
+		+ COEF.CNS[N]/EXPT(T^,CONSTANTS.U[N])
+		*(CONSTANTS.B[N] - CONSTANTS.C[N]*CONSTANTS.K[N]*EXPT(DR,CONSTANTS.K[N]))
+		* EXPT(DR,CONSTANTS.B[N])
+		* EXP(-CONSTANTS.C[N]*EXPT(DR,CONSTANTS.K[N]));
+END_FOR
+
+P^		:= D^ * MW.RGAS * T^ * Z^;
+PZOFDT	:= Z^;
