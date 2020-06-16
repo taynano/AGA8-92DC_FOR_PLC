@@ -1,4 +1,4 @@
-Código em ST (Texto Estruturado/Structured Text) programado de acordo com a IEC61131-3 para execução em CLPs (PLCs) contendo o cálculo do fator de compressibilidade AGA8-92DC descrito pela ISO 12213-2:2006 (Natural gas - Calculation of compression factor - Part 2:Calculation using molar-composition analysis).
+Código em ST (Texto Estruturado/Structured Text) programado de acordo com a IEC61131-3 para execução em CLPs (PLCs) contendo o cálculo do fator de compressibilidade AGA8-92DC descrito pela ISO 12213-2:2006 (Natural gas - Calculation of compression factor - Part 2: Calculation using molar-composition analysis).
 
 Código usualmente utilizado na medição de vazão de gás natural em conversores de volume, conforme recomendado pela NBR 16107:2017 (Fator de conversão do volume de gás).
 
@@ -45,7 +45,7 @@ Gas_Teste[16]  - N-C8H18 (N-Octano)  -
 Gas_Teste[17]  - N-C9H20 (N-Nonano)  - 
 Gas_Teste[18]  - N-C10H22 (N-Decano)  - 
 Gas_Teste[19]  - He (Hélio)  - 
-Gas_Teste[20]  - Ar (Argônio)  - 
+Gas_Teste[20]  - Ar (Argônio)
 
 As composições recomendadas para teste do algoritmo segundo a ISO 12213-2:2006 (E), Anexo C (Example Calculations) são:
 
