@@ -4,19 +4,22 @@ Código usualmente utilizado na medição de vazão de gás natural em conversor
 
 IMPORTANTE
 
-Esse código corresponde ao mesmo código programado em FORTRAN pela ISO 12213-2. Aqui foram preservados os nomes das variáveis e estruturas de dados. Para maiores informações consulte a norma e o código-fonte disponível nela.
+Esse código corresponde ao mesmo código programado em FORTRAN pela ISO 12213-2.
+Aqui foram preservados os nomes das variáveis e das estruturas de dados.
+Para maiores informações consulte a norma e o código-fonte disponível nela.
 
 OBTENDO O FATOR Z
 
-Esse código foi programado utilizando o CODESYS e é PARTE de um projeto desenvolvido na UFMG em 2018/2019 por mim e pelo professor Carlos Henrique de Morais Bomfim para medição de vazão de gás natural utilizando plataformas abertas de automação (veja a publicação em anexo).
+Esse código foi programado utilizando o CODESYS e é PARTE de um projeto desenvolvido na UFMG em 2018/2019 pelo estudante Taynan Roger e pelo professor Carlos Henrique de Morais Bomfim para medição de vazão de gás natural utilizando plataformas abertas de automação (veja a publicação em anexo).
 
 Para utilização do programa no CODESYS utilize o arquivo AGA8-92DC_ST_IEC61131-3.project.
-Para visualição dos códigos no VisualCode utilize os arquivos contidos na pasta CÓDIGOS_AVULSOS e a extensão Structured Text Language Support para melhor visualização dos arquivos .st (extensão recomendada).
+Para visualição dos códigos no VisualCode (ou similar) utilize os arquivos contidos na pasta CÓDIGOS_AVULSOS e a extensão Structured Text Language Support (ou similar) para melhor visualização dos arquivos .st (extensão recomendada).
 
-Para obter o Fator Z, altere os seguintes parâmetro em AGA8_92DC_TESTE: Gas_Teste, T_Teste e P_Teste.
+Para obter o Fator Z, altere os seguintes parâmetro em AGA8_92DC_TESTE:
+Gas_Teste, T_Teste e P_Teste.
 O resultado estará gravado na variável Z_Gas.
 
-Se utilizar o CODESYS para execução do programa, alternativamente, você pode criar uma aplicação gráfica utilizando o WebVisu.
+Se utilizar o CODESYS para execução do programa, alternativamente, você poderá criar uma aplicação gráfica utilizando o WebVisu.
 
 A unidade da variável T_Teste é ºC, enquanto a unidade de P_Teste é bar.
 
@@ -44,7 +47,7 @@ Gas_Teste[18]  - N-C10H22 (N-Decano)  -
 Gas_Teste[19]  - He (Hélio)  - 
 Gas_Teste[20]  - Ar (Argônio)  - 
 
-As composições recomendadas para teste do algoritmo segundo a ISO 12213-2:2006(E), Anexo C (Example Calculations) são:
+As composições recomendadas para teste do algoritmo segundo a ISO 12213-2:2006 (E), Anexo C (Example Calculations) são:
 
 Gas 1:
 (0.9650, 0.0030, 0.0060, 0.0180, 0.0045, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0010, 0.0010, 0.0005, 0.0003, 0.0007, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000)
@@ -65,7 +68,7 @@ Gas 6:
 (0.8260, 0.1170, 0.0110, 0.0350, 0.0075, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0012, 0.0012, 0.0004, 0.0004, 0.0002, 0.0001, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000)
 
 As condições de pressão e temperatura estão descritas no mesmo anexo da norma, disponível neste diretório (Annex C - ISO 12213-2).
-No diretório estão também os resultados encontrados por mim para esses exemplos (My Results (Z-Values)).
+Na pasta estão também os resultados encontrados em um simulação do código para esses exemplos (My Results (Z-Values)).
 
 Para dúvidas e contribuições utilize a issue do diretório.
 Respondo assim que possível. Obrigado pela visita!

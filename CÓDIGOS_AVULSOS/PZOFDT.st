@@ -6,23 +6,24 @@ VAR_INPUT
 	EZ		: DWORD;
 	EBmix	: DWORD;
 END_VAR
+
 VAR
 	D		: POINTER TO LREAL	;
 	T		: POINTER TO LREAL	;
 	P		: POINTER TO LREAL	;
 	Z		: POINTER TO LREAL	;
-	Bmix		: POINTER TO LREAL	;
-	N		: INT			;
-  	DR		: LREAL			;
+	Bmix	: POINTER TO LREAL	;
+	N		: INT				;
+  	DR		: LREAL				;
 END_VAR
 
 P		:= EP;
 T		:= ET;
 D		:= ED;
 Z		:= EZ;
-Bmix		:= EBmix;
+Bmix	:= EBmix;
 DR		:= D^*EXPT(COEF.K1,3);
-Bmix^		:= 0;
+Bmix^	:= 0;
 
 FOR N:=0 TO 17 DO
 	Bmix^ := Bmix^ + COEF.BI[N]/EXPT(T^,CONSTANTS.U[N]);

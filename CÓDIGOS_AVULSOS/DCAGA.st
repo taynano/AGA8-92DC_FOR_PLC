@@ -8,15 +8,15 @@ VAR
 	J		: INT						;
 	N		: INT						;
 	SUM		: LREAL						;
-	XI		: ARRAY [0..20] OF LREAL				;
+	XI		: ARRAY [0..20] OF LREAL	;
 	U1		: LREAL						;
 	G1		: LREAL						;
 	Q1		: LREAL						;
 	F1		: LREAL						;
 	E1		: LREAL						;
 	XIJ		: LREAL						;
-	EIJ0		: LREAL						;
-	GIJ0		: LREAL						;
+	EIJ0	: LREAL						;
+	GIJ0	: LREAL						;
 	BN		: LREAL						;	
 END_VAR
 
